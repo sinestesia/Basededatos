@@ -44,6 +44,7 @@ public class ClienteAdaptadorRecycler extends RecyclerView.Adapter<ClienteAdapta
     @Override
     public ClienteViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(contexto).inflate(R.layout.cliente, parent, false);
+        v.setOnClickListener(this);
         return new ClienteViewHolder(v);
     }
 
